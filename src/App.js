@@ -1,6 +1,7 @@
 import {Component} from 'react';
 import {v4} from 'uuid';
 import './App.sass';
+import ColorList from "./components/ColorList/ColorList";
 
 export class App extends Component {
   constructor(props) {
