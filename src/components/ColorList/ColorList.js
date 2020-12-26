@@ -1,3 +1,5 @@
+import Color from "./Color/Color";
+
 const ColorList = ({ colors = [], onRate = f => f, onRemove = f => f }) => (
   <div className="color-list">
     {(colors.length === 0) ?
