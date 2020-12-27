@@ -7,7 +7,14 @@ import AddColorForm from "./components/AddColorForm/AddColorForm";
 export class App extends Component {
 
   state = {
-    colors: [],
+    colors: [
+      {
+        id: '01sda3j-s98d-09asd-09asd8-09sad',
+        title: 'ocean at dusk',
+        color: '#00c4e2',
+        rating: 5
+      },
+    ],
   }
 
   addColor = (title, color) => {
@@ -20,6 +27,7 @@ export class App extends Component {
         rating: 0,
       }
     ];
+    this.setState({colors});
   }
 
   rateColor = (id, rating) => {
@@ -34,7 +42,7 @@ export class App extends Component {
     this.setState({colors});
   }
 
-  removeColor(id) {
+  removeColor = (id) => {
     const colors = this.state.colors.filter(
       color => color.id !== id
     )
