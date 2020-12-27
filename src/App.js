@@ -53,7 +53,7 @@ export class App extends Component {
     const { addColor, rateColor, removeColor } = this;
     const { colors } = this.state;
     return (
-      <div className="app">
+      <div className="app container mx-auto mt-12">
         <AddColorForm onNewColor={addColor} />
         <ColorList colors={colors} onRate={rateColor} onRemove={removeColor} />
       </div>
