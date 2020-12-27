@@ -2,13 +2,12 @@ import {Component} from 'react';
 import {v4} from 'uuid';
 import './App.sass';
 import ColorList from "./components/ColorList/ColorList";
+import AddColorForm from "./components/AddColorForm/AddColorForm";
 
 export class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      colors: [],
-    }
+
+  state = {
+    colors: [],
   }
 
   addColor = (title, color) => {
@@ -53,5 +52,7 @@ export class App extends Component {
     );
   }
 }
+
+export default App;
 
 
