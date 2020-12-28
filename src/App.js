@@ -12,7 +12,7 @@ export class App extends Component {
         id: '01sda3j-s98d-09asd-09asd8-09sad',
         title: 'ocean at dusk',
         color: '#00c4e2',
-        rating: 5
+        rating: 3
       },
     ],
   }
