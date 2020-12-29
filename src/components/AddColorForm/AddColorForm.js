@@ -14,11 +14,15 @@ const AddColorForm = ({onNewColor = f => f}) => {
     <form onSubmit={submit} className="w-1/4">
       <input type="text"
              ref={title}
-             placeholder="color title..."
-             className="pl-4 h-8 bg-gray-200 w-full rounded-full focus:outline-none focus:shadow-outline text-sm"
+             placeholder="Color title..."
+             className="pl-4 h-8 bg-gray-200 w-full rounded-full focus:outline-none focus:shadow-outline text-sm mb-3"
              required />
-      <input type="color" ref={color} required />
-      <button>ADD</button>
+      <div className="flex">
+        <div className="mr-3">Choose color</div>
+        <input type="color" ref={color} required />
+      </div>
+
+      <button className="px-5 py-1 rounded-md bg-indigo-500 text-white">ADD</button>
     </form>
   );
 }
