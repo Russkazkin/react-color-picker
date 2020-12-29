@@ -11,8 +11,12 @@ const AddColorForm = ({onNewColor = f => f}) => {
     title.current.focus();
   }
   return (
-    <form onSubmit={submit}>
-      <input type="text" ref={title} placeholder="color title..." required />
+    <form onSubmit={submit} className="w-1/4">
+      <input type="text"
+             ref={title}
+             placeholder="color title..."
+             className="pl-4 h-8 bg-gray-200 w-full rounded-full focus:outline-none focus:shadow-outline text-sm"
+             required />
       <input type="color" ref={color} required />
       <button>ADD</button>
     </form>
