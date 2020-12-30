@@ -22,7 +22,7 @@ const AddColorForm = ({onNewColor = f => f}) => {
         <input type="color" ref={color} required />
       </div>
 
-      <button className="px-5 py-1 rounded-md bg-indigo-500 text-white">ADD</button>
+      <button className="px-5 py-1 my-5 rounded-md bg-indigo-500 text-white">ADD</button>
     </form>
   );
 }
